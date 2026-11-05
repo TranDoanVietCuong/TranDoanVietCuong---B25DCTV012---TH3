@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "content": "Ăn sáng",
+    "amount": 30000,
+    "category": "Ăn uống",
+    "date": "2026-11-05"
+  },
+  {
+    "id": "2",
+    "content": "Đổ xăng",
+    "amount": 50000,
+    "category": "Đi lại",
+    "date": "2026-11-05"
+  },
+  {
+    "id": "3",
+    "content": "Mua giáo trình",
+    "amount": 85000,
+    "category": "Học tập",
+    "date": "2026-11-05"
+  },
+  {
+    "id": "4",
+    "content": "Xem phim",
+    "amount": 70000,
+    "category": "Giải trí",
+    "date": "2026-11-05"
+  },
+  {
+    "id": "5",
+    "content": "Cơm trưa",
+    "amount": 35000,
+    "category": "Ăn uống",
+    "date": "2026-11-05"
+  }
+]

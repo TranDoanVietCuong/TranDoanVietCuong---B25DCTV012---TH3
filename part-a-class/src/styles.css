@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f2f4f7; color: #253141; font-family: Arial, sans-serif; }
+button, input, select { font: inherit; }
+button { padding: 9px 13px; border: 1px solid #ccd3dc; border-radius: 4px; background: #fff; cursor: pointer; }
+button:hover { background: #eaf0f8; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #2365ae; outline-offset: 2px; }
+.app { max-width: 1180px; margin: 0 auto; padding: 24px; }
+.header { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 20px; }
+h1 { margin: 0; font-size: 28px; }
+h2 { margin: 0 0 18px; font-size: 20px; }
+h3 { margin: 0; font-size: 15px; }
+.header-tools { display: flex; align-items: center; gap: 16px; }
+.clock { display: flex; flex-direction: column; gap: 5px; text-align: right; }
+.clock time { font-size: 22px; font-variant-numeric: tabular-nums; }
+.clock span { font-size: 13px; color: #647080; }
+.overview { display: flex; flex-wrap: wrap; gap: 15px 40px; padding: 16px 20px; background: #e4edf9; border: 1px solid #cbdaf0; border-radius: 6px; margin-bottom: 20px; }
+.overview p { margin: 0; }
+.overview strong { color: #1c518d; }
+.workspace { display: flex; gap: 20px; align-items: flex-start; }
+.panel { background: white; padding: 20px; border: 1px solid #dce1e8; border-radius: 6px; }
+.form-panel { flex: 0 0 280px; }
+.list-panel { flex: 1; min-width: 0; }
+.field { margin-bottom: 16px; }
+label { display: block; margin-bottom: 7px; font-size: 14px; font-weight: bold; }
+input, select { width: 100%; min-width: 0; padding: 10px; border: 1px solid #c9d1dc; border-radius: 4px; background: white; color: #253141; }
+.primary { background: #2365ae; border-color: #2365ae; color: white; }
+.primary:hover { background: #194e8a; }
+.form-panel .primary { width: 100%; }
+.error { color: #b42318; font-size: 13px; margin: 7px 0 0; line-height: 1.5; }
+.search-box { margin-bottom: 16px; }
+.search-box small { display: block; color: #647080; font-size: 12px; line-height: 1.5; margin-top: 7px; }
+.filters { display: flex; flex-wrap: wrap; gap: 7px; }
+.filter-button { font-size: 13px; }
+.filter-button.active { background: #2365ae; border-color: #2365ae; color: white; }
+.note { color: #647080; font-size: 13px; line-height: 1.6; }
+.status { color: #217147; min-height: 18px; font-size: 13px; margin: 10px 0; }
+.table-scroll { overflow-x: auto; }
+table { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 14px; text-align: left; }
+th, td { padding: 12px 9px; border: 1px solid #dce1e8; }
+thead, tfoot { background: #edf2f8; }
+th { font-size: 13px; }
+.expense-content { max-width: 210px; overflow-wrap: anywhere; }
+.money { text-align: right; white-space: nowrap; }
+.date-cell { white-space: nowrap; }
+.delete-button { color: #b42318; border-color: #e9bdb8; padding: 6px 10px; }
+.empty { text-align: center; padding: 28px 10px; color: #647080; }
+.statistics { margin-top: 20px; }
+.statistics h2 { margin-bottom: 8px; }
+.stats-list { display: flex; flex-wrap: wrap; gap: 14px; }
+.stat-item { flex: 1 1 180px; padding: 16px; background: #f5f7fa; border: 1px solid #e2e6ed; display: flex; flex-direction: column; gap: 10px; }
+.stat-item strong { color: #1c518d; font-size: 20px; }
+.stat-item span { color: #647080; font-size: 13px; }
+footer { margin-top: 20px; color: #647080; font-size: 13px; text-align: center; line-height: 1.5; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.clock-demo { max-width: 600px; margin: 40px auto; }
+.clock-demo .clock { text-align: left; margin: 20px 0; }
+.clock-demo p { line-height: 1.6; }
+@media (max-width: 800px) {
+  .app { padding: 16px; }
+  .header { flex-direction: column; align-items: flex-start; }
+  .header-tools { width: 100%; justify-content: space-between; }
+  .clock { text-align: left; }
+  .workspace { flex-direction: column; }
+  .form-panel, .list-panel { width: 100%; flex-basis: auto; }
+  h1 { font-size: 25px; }
+  .panel { padding: 16px; }
+}
