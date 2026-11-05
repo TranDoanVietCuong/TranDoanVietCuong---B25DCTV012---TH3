@@ -31,8 +31,7 @@ Mở đường dẫn **Local** hiện trong Terminal (thường là `http://loca
 
 1. Vào [mockapi.io](https://mockapi.io/), tạo project và resource tên `expenses`.
 2. Resource cần có các trường: `content` (String), `amount` (Number), `category` (String), `date` (String). Trường `id` do MockAPI tự tạo.
-3. Sao chép file `.env.example` thành `.env` trong thư mục `phan-b`.
-4. Mở `.env` và thay đường dẫn bằng URL resource thực tế của bạn:
+3. Mở `.env` và thay đường dẫn bằng URL resource thực tế của bạn:
 
 ```env
 VITE_API_URL=https://TEN_PROJECT.mockapi.io/api/v1/expenses
@@ -52,14 +51,3 @@ npm run dev
 Mở đường dẫn **Local** hiện trong Terminal (thường là `http://localhost:5173/`). Nếu chạy đồng thời cả hai phần, Vite có thể tự chọn cổng khác, ví dụ `5174`.
 
 **Lưu ý:** Phần B cần URL MockAPI hợp lệ để tải, thêm và xóa dữ liệu. Sau khi sửa `.env`, nhấn `Ctrl + C` để dừng server rồi chạy lại `npm run dev`.
-
-## 3. Các lệnh khác
-
-Dùng trong thư mục của từng phần:
-
-```bash
-npm run build     # Tạo bản build
-npm run preview   # Xem thử bản build
-```
-
-Không mở trực tiếp `index.html` bằng cách nháy đúp; hãy chạy qua Vite bằng `npm run dev`.
